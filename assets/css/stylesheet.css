@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family:segoe UI;
+}
+
+/* common classes start*/
+img{
+	max-width:100%;
+}
+.container{
+	max-width:1140px;
+	width:100%;
+	margin:0 auto;
+}
+ul{
+    list-style: none;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+}
+a{
+	text-decoration:none;
+}
+:focus{
+	outline:none;
+}
+
+/* common classes end */
+
+/* == header Start == */
+.baner{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #FFF7F5;
+}
+.nav_link{
+    margin-left: 30px;
+    color: #3A393E;
+}
+.btn_info{
+    color: #fff;
+}
+.btn ,.collection_btn{
+    background-color: #FF6D33;
+    display: inline-block;
+    padding: 7px 20px;
+}
+/* == header end== */
+/* index page start */
+.section{
+    margin: 100px;
+}
+.about_covid_19{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.right_side{
+    width: 50%;
+}
+.covid_19 ,.covid_19_{
+color: #FF6D33;
+}
+.covid_info ,.covid_19_,.collecion_upper_bar{
+    display: flex;
+}
+.covid_virus ,.covid_19_{
+font-size: 50px;
+font-weight: 600;
+}
+.left_side{
+width: 50%;
+}
+.background{
+   background-image:url("../img/background.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 667px;
+}
+.girl{
+    margin-top: -40px;
+}
+.banner{
+    background-color: #FFF7F5;
+}
+.collection_title ,.collection_title_center{
+    background-color: #FCF0E7;
+    width: 34%;
+    height: 227px;
+    padding: 15px;
+}
+.masks ,.mask{
+width: 311px;
+margin-left: 97px;
+transform: scale(0.9);
+margin-top: -75px;
+}
+.mask{
+    margin-left: 150px;
+}
+.hand_wash{
+    height: 210px;
+    width: 210px;
+}
+.collection_title_center{
+    margin:0 20px;
+}
+.collection_btn a{
+    margin-top: 20px;
+}
+.safty_product{
+text-align: center;
+}
+.safty_product_upper{
+    background-color: #F5F5F5;
+}
+
+/* index page end */
+
+
+
