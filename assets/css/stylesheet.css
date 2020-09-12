@@ -14,7 +14,7 @@ img{
 .container{
 	max-width:1140px;
 	width:100%;
-	margin:0 auto;
+    margin:0 auto;
 }
 ul{
     list-style: none;
@@ -22,6 +22,7 @@ ul{
 .nav_list{
     display: flex;
     align-items: center;
+    margin: 0;
 }
 a{
 	text-decoration:none;
@@ -78,7 +79,7 @@ background-color: #FFF7F5;
     margin: 50px 0;
 }
 .header{
-background-color: #FFF7F5;;
+background-color: #FFF7F5;
 }
 .about_covid_19{
     width: 100%;
@@ -129,12 +130,13 @@ padding: 10px;
 }
 .mask{
     height: 159px;
-    width: 212px;
+    width: 219px;
 }
 .product_info{
     font-size: 28px;
     font-weight: 600;
     padding: 10px;
+    line-height: 1.2;
 }
 .card_right_side{
     background-color: #FCF0E7;

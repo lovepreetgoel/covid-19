@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1199px) {
+    .handwash{
+        position: absolute;
+        transform: scale(0.9);
+        bottom: 0;
+        left: 67px;
+    }
+    .logo_img {
+    position: absolute;
+    left: 453px;
+    transform: scale(0.4);
+    bottom: -49px
+    }
+    .about_products {
+        font-weight: 400;
+        font-size: 20px;
+        color: #000000;
+    }
+    .mask_img {
+        position: relative;
+        left: 192px;
+        transform: scale(0.45);
+        bottom: -24px;
+    }
+    .footer_icon{
+        margin: 0 15px;
+    }
+    .footer_text{
+        font-size: 13px;
+        margin-left: 20px;
+    }
+
+    .owner{
+        width: 118px;
+        height: 118px;
+    }
+    .linkedin, .twitter {
+        padding: 9px;
+        margin: 0 9px;
+    }
+    .container{
+        padding: 0 15px;
+    }
+    .virus_left {
+        width: 235px;
+        height: 230px;
+        left: -129px;
+        top: 314px;
+    }
+    .virus {
+        top: 379px;
+        right: 401px;
+    }
+    .background {
+        background-size: 542px;
+    }
+    .about_products {
+        font-size: 20px;
+    }
+    .lady{
+        display: none;
+    }
+    .banner {
+        background-color:#FCF0E7;
+    }
+    .header{
+        background-color: #FCF0E7;
+    }
+    .baner{
+        background-color: #FCF0E7;
+    }
+    .mask{
+        height: 159px;
+        width: 159px;
+    }
+  }
