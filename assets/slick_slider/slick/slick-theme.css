@@ -154,16 +154,17 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
-    padding: 5px;
+    width: 4px;
+    height: 4px;
+    padding: 6px;
 
     cursor: pointer;
-
+    margin: 3px;
     color: transparent;
     border: 0;
     outline: none;
-    background: transparent;
+    background:#FF6D33;
+    border-radius: 50%;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -192,7 +193,6 @@
     text-align: center;
 
     opacity: .25;
-    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

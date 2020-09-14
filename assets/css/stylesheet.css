@@ -432,6 +432,8 @@ a.btn.btn--primary {
 	width: 111px;
 	border-radius: 64px;
 	margin: 0 auto;
+	object-fit: cover;
+    object-position: top;
 }
 
 .slider_title {
@@ -478,6 +480,8 @@ a.btn.btn--primary {
 	width: 159px;
 	height: 126px;
 	padding: 10px;
+	object-fit: cover;
+	object-position: top;
 }
 .navbar-link {
 	color: #3A393E;
@@ -498,11 +502,12 @@ footer {
 	overflow: hidden;
 }
 .footer-title{
-	margin-top: -40px;
+	margin-top: -50px;
 }
 .copyright {
 	text-align: center;
 	border-top: 1px solid gray;
+	padding: 10px;
 }
 
 .slick-dots .slick-active {
@@ -599,7 +604,7 @@ footer {
 }
 
 .slick-dots li.slick-active button:before {
-	font-size: 12px;
+	font-size: 0;
 	color: #FF6D33;
 }
 
