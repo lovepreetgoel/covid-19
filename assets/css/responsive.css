@@ -5,6 +5,7 @@
         bottom: 0;
         left: 67px;
     }
+    
     .logo_img {
     position: absolute;
     left: 453px;
@@ -29,10 +30,9 @@
         font-size: 13px;
         margin-left: 20px;
     }
-
     .owner{
-        width: 118px;
-        height: 118px;
+        width: 152px;
+        height: 152px;
     }
     .linkedin, .twitter {
         padding: 9px;
@@ -74,3 +74,59 @@
         width: 159px;
     }
   }
+@media only screen and (max-width:991px) {
+    .nav_list{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .toggle{
+        display: flex;
+        height: 75px;
+        width: 75px;
+    }
+    .about_covid_19{
+        display: none;
+    }
+    .toggle_bar{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .home{
+        text-align: center;
+    }
+    .owner {
+        width: 91px;
+        height: 91px;
+    }
+        .nav{
+            margin: 0;
+            display: none;
+        }
+        .nav.active{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            z-index: 9;
+            background: #fff;
+            box-shadow: 0 2px 0px rgba(0,0,0,0.24);
+            padding: 20px 40px;
+        }
+        .navbar{
+            flex-direction: column;
+        }
+    
+        .nav_link{
+            padding: 8px 0;
+        }
+    
+        .nav_toggler{
+            display: inline-block;
+        }
+    
+}
+

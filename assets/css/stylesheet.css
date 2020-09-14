@@ -1,553 +1,780 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-body{
-	font-family:segoe UI;
+body {
+	font-family: segoe UI;
 }
-
 /* common classes start*/
-img{
-	max-width:100%;
+img {
+	max-width: 100%;
 }
-.container{
-	max-width:1140px;
-	width:100%;
-    margin:0 auto;
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
 }
-ul{
-    list-style: none;
+ul {
+	list-style: none;
 }
-.nav_list{
+.nav_list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+:focus {
+	outline: none;
+}
+.slider_area:hover {
+	background-image: url("../img/bg.png");
+	background-position: center top;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.slider_area:hover .comma_img {
+	opacity: 1;
+}
+.card_btn {
+	opacity: 0;
+	transition: 4s;
+}
+.card_wreper {
+	position: relative;
+}
+.card_wreper:hover .card_btn {
+	opacity: 1;
+}
+/* common classes end */
+/* == header Start == */
+.header{
+    padding: 10px 0;
+    background-color: #fff7f5
+}
+.header__inner {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 130px;
+}
+.nav{
+    margin-right: 40px;
+}
+.navbar{
     display: flex;
     align-items: center;
     margin: 0;
 }
-a{
-	text-decoration:none;
+.nav_item{
+    padding: 0 20px;
 }
-:focus{
-	outline:none;
-}
-.slider_area:hover{
-    background-image:url("../img/bg.png");
-    background-position: center top; 
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
- }
- .slider_area:hover .comma_img{
-    opacity: 1;
- }
-.card_btn{
-    opacity: 0;
-    transition: 4s;
-}
-.card_wreper{
-position: relative;
-}
-.card_wreper:hover .card_btn{
-    opacity: 1;
-}
-/* common classes end */
-
-/* == header Start == */
-.baner{
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: #FFF7F5;
-}
-.nav_link{
-    margin-left: 30px;
+.nav_link {
     color: #3A393E;
-}
-.btn_info{
-    color: #fff;
-    background-color: #FF6D33;
-    border: none;
-}
-.btn ,.view_btn,.add_card_btn{
-    background-color: #FF6D33;
     display: inline-block;
-    padding: 9px 15px;
-    border: 2px solid #fff;
+    font-size: 14px;
+    text-transform: capitalize;
 }
-/* == header end== */
-/* index page start */
-.section{
-    margin: 50px 0;
+.nav_link:hover{
+    color: #FF6D33
 }
-.header{
-background-color: #FFF7F5;
-}
-.about_covid_19{
-    width: 100%;
+.header__rightMenu,
+.header__right {
     display: flex;
     align-items: center;
 }
-.right_side ,.left_side{
-    width: 50%;
-}
-.covid_19 ,.covid_19_{
-color: #FF6D33;
-margin-left:10px;
-}
-.covid_19_products_Featured,.about_product,.covid_text,.health_protection,.covid_protection,.covid_19_review_amt,.covid__info ,.covid_19_,.collecion_upper_bar ,.covid_19_products,.about_covid_19_product,.covid_19_review,.covid_19_reviews{
-    display: flex;
-}
-.covid__info{
-font-size: 18px;
-}
-.covid_virus ,.covid_19_{
-font-size:60px;
-font-weight: 700;
-line-height: 0.9;
-}
-.background{
-   background-image:url("../img/background.png");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 667px;
-}
-.girl{
-    margin-top: -40px;
-}
-.banner{
-    background-color: #FFF7F5;
-    position: relative;
-    overflow: hidden;
-}
-.text_bottom{
-    margin: 2px 0;
-}
-.safty_form_covid_19{
-    margin-left: 10px;
-}
-.about_product{
-align-items: center ;
-padding: 10px;
-}
-.mask{
-    height: 159px;
-    width: 219px;
-}
-.product_info{
-    font-size: 28px;
-    font-weight: 600;
-    padding: 10px;
-    line-height: 1.2;
-}
-.card_right_side{
-    background-color: #FCF0E7;
-}
-.card_center_side{
-    background-color:#E5F1F5;
-    margin: 0 20px;
-}
-.card_left_side{
-    background-color: #2684EF;
-}
-.covid_heading{
-    font-size: 30px;
-}
-.covid_heading_{
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 0.5;
-}
-.COVID_title{
-    text-align: center;
-}
-.Product__img,.right_side{
-    position: relative;
-}
-.Product__img::after{
-    content: "20% OFF";
-    position: absolute;
-    left: 5px;
-    background-image: url(../img/tag.png);
-    background-repeat: no-repeat;
-    height: 75px;
-    width: 53px;
-    color: #fff;
-    text-align: center;
-    top: 0;
-}
-.virus_left{
-position: absolute;
-width: 265px;
-height: 260px;
-left: -231px;
-}
-.virus_right{
-    position: absolute;
-    width: 265px;
-    height: 260px;
-    right: -155px;
-}
-.left_side{
-position: relative;
-}
-.virus{
-    position: absolute;
-    width: 265px;
-    height: 260px;
-    top: 457px;
-    right: 562px
-}
-.left_side_content{
-    position: relative;
-}
-.second_1{
-    height: 323px;
-    width: 201px;
-    object-fit: contain;
-}
-.about_covid_19_product{
-    align-items: center;
-}
-.about_covid_19_product_amt{
-    margin-left: 10px;
-    text-decoration: line-through;
-    color: #989898;
-}
-.amt_heading{
-    font-size: 24px;
-    color: #FF6D33;
-}
-.covid_19_review_amt{
- align-items: baseline;
-}
-.covid_19_review{
-justify-content:space-between ;
-}
-.covid__19__products,.covid___19___products{
-    width: 33%;
-    padding: 10px;
-}
-.Product__img{
-    background-color: #F5F5F5;
-    text-align: center;
-}
-.covid_19_products_Featured{
-    margin-top: 40px;
-}
-.about_products{
-    font-weight: 400;
-    font-size: 22px;
-    color: #000000;
-}
-.amt___heading{
-    font-size: 20px;
-    color: #FF6D33;
-}
-.sale-btn{
-text-align: center;
-margin: 50px 0;
-}
-.view_sale_btn,.add_btn,.buy_btn{
-    background-color: #FF6D33;
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 10px 50px;
-}
-.covid_product{
-    position: relative;
-}
-.card_btn{
-    position: absolute;
-    z-index: 1;
-    top: 135px;
-    left: 103px;
-}
-.card_wreper{
-    width: 33%;
-    padding: 10px;
-}
-.add_btn{
-    min-width: 140px;
-    padding: 10px;
-}
-.card_left,.Protection{
-display: flex;
-}
-.card_left{
-width: 90%;
-background-color: #FCF0E7;
-padding-left: 20px;
-position: relative;
-align-items: center;
-}
-.covid_protection{
-    align-items: center;
-}
-.card_left_content{
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 0.8;
-}
-.card_right{
-width: 10%;
-}
-.card{
-    display: flex;
-}
-.about_lady{
-height: 300px;
-position: relative;
-right: 54px;
-}
-.slider_title{
-    position: relative;
-}
-.comma_img{
-    position: absolute;
-    left: 228px;
-}
-.slider_content{
-    text-align: center;
-}
-.slider_img,.slider_imgs{
-    height: 111px;
-    width: 111px;
-    border-radius: 64px;
-    margin: 0 auto;
-}
-.slider_title{
-    width: 83%;
-    margin: 0 auto;
-    text-align: center;
-}
-.linkedin,.twitter{
-    background-color: #2196F3;
-    padding: 10px;
-    margin: 0 10px;
-}
-.youtube{
-    background-color: #FF0000;
-    padding: 10px;
-}
-.facebook{
-    background-color: #3B5999;
-    padding: 10px;
-}
-.navbar{
-display: flex;
-width: 100%;
-}
-.footer_logo{
-    width: 30%;
-    position: relative;
-}
-.navbar_list{
-    width: 54%;
-    padding: 25px 0 2px;
-    margin-left: 50px;
-}
-.owner{
-    width: 159px;
-    height: 126px;
-    padding: 10px;
-}
-.navbar-list{
-    margin: 25px;
-}
-.navbar-link{
-    color: #3A393E;
-}
-.navbar-item{
-    margin-bottom: 10px;
-}
-.navbar-list{
-    width: 10%;
-}
-footer{
-    background-color: #FFF7F5;
-    position: relative;
-    overflow: hidden;
-}
-.copyright{
-    text-align: center;
-    border-top: 1px solid gray;
-}
-.slick-dots .slick-active{
-    border: 1px solid #FF6D33;
-    border-radius: 50%;
-}
-.comma_img{
-opacity: 0.2;
-}
-.eys_btn{
-    height: 35px;
-    width: 35px;
-    background-color: #fff;
-    padding: 5px;
-}
-.btn_img{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-}
-.footer_virus{
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    left: -41px;
-}
-.footer_virus_center{
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    left: 192px;
-    bottom: 25px;
-}
-.footer_virus_right{
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    right: -68px;
-    top: 194px;
-}
-.card_content{
-    line-height: 0.2;
-    margin: 24px 0;
-}
-.health_protection{
-    display: flex;
-    align-items: baseline;
-}
-.card_sale{
-    margin-left: 20px;
-}
-.protection_content,.protection_inner{
-    display: flex;
-}
-.protection_inner{
-    position: relative;
-}
-.handwash{
-    position: absolute;
-    transform: scale(1.0);
-    left: 126px;
-    bottom: -39px;
-}
-.logo_img{
-    position: absolute;
-    left: 511px;
-    transform: scale(0.5);
-    bottom: -43px;
-}
-.mask_img{
-    position: relative;
-    left: 261px;
-    transform: scale(0.5);
-    bottom: -70px;
-}
-.slick-dots li.slick-active button:before{
-font-size: 12px;
-color:#FF6D33;
-}
-/* index page end */
-/* second page start */
-.header_title{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-.header_upper,.header_logo{
-width: 40%;
-}
-.header_heading{
-    width: 20%;
-}
-.header_upper{
-    width: 542px;
-    height: 419px;
-}
-.header_logo{
-    width: 436px;
-    height: 370px;
-}
-.covid_19_logo{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    left: -86px;
-    bottom: -96px;
-}
-.covid_logo_center{
-    position: absolute;
-    width: 438px;
-    height: 400px;
-    right: 431px;
-    bottom: -198px;
-}
-.covid_logo_left{
-    position: absolute;
-    width: 385px;
-    height: 376px;
-    right: -230px;
-    top: 104px;
-}
-.second_card_left{
-    width: 25%;
-    background-color: #F5F5F5;
-    display: block;
-    margin-top: 50px;
-}
-.second_card_right{
-    width: 75%;
-}
-.form{
-    width: 100%;
-}
-.form_heading{
-    border-bottom: 1px solid #707070;
-}
-.check_box ,.amt{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.checkbox{
+.nav_toggler{
     display: none;
+    margin-left: 15px;
 }
-.range_btn{
-    width: 100%;
+.nav_toggler img{
+    width: 25px;
+}
+/* Header */
+/* btn */
+a.btn.btn--primary {
+    color: #fff;
+}
+.btn_info {
+	color: #fff;
+	background-color: #FF6D33;
+	border: none;
 }
 
-.red ,.vilot,.orange,.sea_blue,.green,.pink{
-    background-color: red;
-    height: 35px;
-    width: 35px;
-    margin: 5px 0;
-    border-radius: 50%;
+.btn,
+.view_btn,
+.add_card_btn {
+	background-color: #FF6D33;
+	display: inline-block;
+	padding: 9px 15px;
+	border: 2px solid #fff;
 }
-.vilot{
-    background-color: #9C46FF;
-    margin-left: 5px;
+/* btn */
+
+/* == header end== */
+
+
+/* index page start */
+
+.section {
+	margin: 50px 0;
 }
-.orange{
-     background-color: #FFA346;
-     margin-left: 5px;
+.about_covid_19
+.header {
+	position: relative;
 }
-.sea_blue{
-    background-color: #4677FF;
-     margin-left: 5px;
+.about_covid_19 {
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
-.green{
-    background-color: #76FF46;
-    margin-left: 5px; 
+.right_side,
+.left_side {
+	width: 50%;
 }
-.pink{
-    background-color: #4677FF;
-    margin-left: 5px; 
+
+.covid_19,
+.covid_19_ {
+	color: #FF6D33;
+	margin-left: 10px;
 }
-.block_div,.second_page_card{
-    display: flex;
+.covid_19_products_Featured,
+.about_product,
+.covid_text,
+.health_protection,
+.covid_protection,
+.covid_19_review_amt,
+.covid__info,
+.covid_19_,
+.collecion_upper_bar,
+.covid_19_products,
+.about_covid_19_product,
+.covid_19_review,
+.covid_19_reviews {
+	display: flex;
 }
-.second_page_card{
-width: 100%;
+
+.covid__info {
+	font-size: 18px;
 }
-/* second page end */
+
+.covid_virus,
+.covid_19_ {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 0.9;
+}
+
+.background {
+	background-image: url("../img/background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 667px;
+}
+
+.girl {
+	margin-top: -40px;
+}
+
+.banner {
+	background-color: #FFF7F5;
+	position: relative;
+	overflow: hidden;
+}
+
+.text_bottom {
+	margin: 2px 0;
+}
+
+.safty_form_covid_19 {
+	margin-left: 10px;
+}
+
+.about_product {
+	align-items: center;
+	padding: 10px;
+}
+
+.mask {
+	height: 159px;
+	width: 219px;
+}
+
+.product_info {
+	font-size: 28px;
+	font-weight: 600;
+	padding: 10px;
+	line-height: 1.2;
+}
+
+.card_right_side {
+	background-color: #FCF0E7;
+}
+
+.card_center_side {
+	background-color: #E5F1F5;
+	margin: 0 20px;
+}
+
+.card_left_side {
+	background-color: #2684EF;
+}
+
+.covid_heading {
+	font-size: 30px;
+}
+
+.covid_heading_ {
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 0.5;
+}
+
+.COVID_title {
+	text-align: center;
+}
+
+.Product__img,
+.right_side {
+	position: relative;
+}
+
+.Product__img::after {
+	content: "20% OFF";
+	position: absolute;
+	left: 5px;
+	background-image: url(../img/tag.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 53px;
+	color: #fff;
+	text-align: center;
+	top: 0;
+}
+
+.virus_left {
+	position: absolute;
+	width: 265px;
+	height: 260px;
+	left: -231px;
+}
+
+.virus_right {
+	position: absolute;
+	width: 265px;
+	height: 260px;
+	right: -155px;
+}
+
+.left_side {
+	position: relative;
+}
+
+.virus {
+	position: absolute;
+	width: 265px;
+	height: 260px;
+	top: 457px;
+	right: 562px
+}
+
+.left_side_content {
+	position: relative;
+}
+
+.second_1 {
+	height: 323px;
+	width: 201px;
+	object-fit: contain;
+}
+
+.about_covid_19_product {
+	align-items: center;
+}
+
+.about_covid_19_product_amt {
+	margin-left: 10px;
+	text-decoration: line-through;
+	color: #989898;
+}
+
+.amt_heading {
+	font-size: 24px;
+	color: #FF6D33;
+}
+
+.covid_19_review_amt {
+	align-items: baseline;
+}
+
+.covid_19_review {
+	justify-content: space-between;
+}
+
+.covid__19__products,
+.covid___19___products {
+	width: 33%;
+	padding: 10px;
+}
+
+.Product__img {
+	background-color: #F5F5F5;
+	text-align: center;
+}
+
+.covid_19_products_Featured {
+	margin-top: 40px;
+}
+
+.about_products {
+	font-weight: 400;
+	font-size: 22px;
+	color: #000000;
+}
+
+.amt___heading {
+	font-size: 20px;
+	color: #FF6D33;
+}
+
+.sale-btn {
+	text-align: center;
+	margin: 50px 0;
+}
+
+.view_sale_btn,
+.add_btn,
+.buy_btn {
+	background-color: #FF6D33;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 10px 50px;
+}
+
+.covid_product {
+	position: relative;
+}
+
+.card_btn {
+	position: absolute;
+	z-index: 1;
+	top: 135px;
+	left: 103px;
+}
+
+.card_wreper {
+	width: 33%;
+	padding: 10px;
+}
+
+.add_btn {
+	min-width: 140px;
+	padding: 10px;
+}
+
+.card_left,
+.Protection {
+	display: flex;
+}
+
+.card_left {
+	width: 90%;
+	background-color: #FCF0E7;
+	padding-left: 20px;
+	position: relative;
+	align-items: center;
+}
+
+.covid_protection {
+	align-items: center;
+}
+
+.card_left_content {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 0.8;
+}
+
+.card_right {
+	width: 10%;
+}
+
+.card {
+	display: flex;
+}
+
+.about_lady {
+	height: 300px;
+	position: relative;
+	right: 54px;
+}
+
+.slider_title {
+	position: relative;
+}
+
+.comma_img {
+	position: absolute;
+	left: 228px;
+}
+
+.slider_content {
+	text-align: center;
+}
+
+.slider_img,
+.slider_imgs {
+	height: 111px;
+	width: 111px;
+	border-radius: 64px;
+	margin: 0 auto;
+}
+
+.slider_title {
+	width: 83%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.linkedin,
+.twitter {
+	background-color: #2196F3;
+	padding: 10px;
+	margin: 0 10px;
+}
+
+.youtube {
+	background-color: #FF0000;
+	padding: 10px;
+}
+
+.facebook {
+	background-color: #3B5999;
+	padding: 10px;
+}
+
+.navbar {
+	display: flex;
+	width: 100%;
+}
+
+.footer_logo {
+	width: 30%;
+	position: relative;
+	bottom: 38px;
+}
+
+.navbar_list {
+	width: 54%;
+	padding: 25px 0 2px;
+	margin-left: 50px;
+}
+
+.owner {
+	width: 159px;
+	height: 126px;
+	padding: 10px;
+}
+.navbar-link {
+	color: #3A393E;
+}
+
+.navbar-item {
+	margin-bottom: 5px;
+	width: 10%;
+}
+
+.navbar-list {
+	width: 10%;
+}
+
+footer {
+	background-color: #FFF7F5;
+	position: relative;
+	overflow: hidden;
+}
+.footer-title{
+	margin-top: -40px;
+}
+.copyright {
+	text-align: center;
+	border-top: 1px solid gray;
+}
+
+.slick-dots .slick-active {
+	border: 1px solid #FF6D33;
+	border-radius: 50%;
+}
+
+.comma_img {
+	opacity: 0.2;
+}
+
+.eys_btn {
+	height: 35px;
+	width: 35px;
+	background-color: #fff;
+	padding: 5px;
+}
+
+.btn_img {
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+}
+
+.footer_virus {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	left: -41px;
+}
+
+.footer_virus_center {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	left: 192px;
+	bottom: 25px;
+}
+
+.footer_virus_right {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	right: 18px;
+	top: 194px;
+}
+
+.toggle {
+	display: none;
+}
+
+.card_content {
+	line-height: 0.2;
+	margin: 24px 0;
+}
+
+.health_protection {
+	display: flex;
+	align-items: baseline;
+}
+
+.card_sale {
+	margin-left: 20px;
+}
+
+.protection_content,
+.protection_inner {
+	display: flex;
+}
+
+.protection_inner {
+	position: relative;
+}
+
+.handwash {
+	position: absolute;
+	transform: scale(1.0);
+	left: 126px;
+	bottom: -39px;
+}
+
+.logo_img {
+	position: absolute;
+	left: 511px;
+	transform: scale(0.5);
+	bottom: -43px;
+}
+
+.mask_img {
+	position: relative;
+	left: 261px;
+	transform: scale(0.5);
+	bottom: -70px;
+}
+
+.slick-dots li.slick-active button:before {
+	font-size: 12px;
+	color: #FF6D33;
+}
+
+
+/* index page end */
+
+
+/* second page start */
+
+.header_title {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.header_upper,
+.header_logo {
+	width: 40%;
+}
+
+.header_heading {
+	width: 20%;
+}
+
+.header_upper {
+	width: 542px;
+	height: 419px;
+}
+
+.header_logo {
+	width: 436px;
+	height: 370px;
+}
+
+.covid_19_logo {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: -86px;
+	bottom: -96px;
+}
+
+.covid_logo_center {
+	position: absolute;
+	width: 438px;
+	height: 400px;
+	right: 431px;
+	bottom: -198px;
+}
+
+.covid_logo_left {
+	position: absolute;
+	width: 385px;
+	height: 376px;
+	right: -230px;
+	top: 104px;
+}
+
+.second_card_left {
+	width: 25%;
+	background-color: #F5F5F5;
+	display: block;
+	margin-top: 50px;
+}
+
+.second_card_right {
+	width: 75%;
+}
+
+.form {
+	width: 100%;
+}
+
+.form_heading {
+	border-bottom: 1px solid #707070;
+}
+
+.check_box,
+.amt {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.checkbox {
+	display: none;
+}
+
+.range_btn {
+	width: 100%;
+}
+
+.red,
+.vilot,
+.orange,
+.sea_blue,
+.green,
+.pink {
+	background-color: red;
+	height: 35px;
+	width: 35px;
+	margin: 5px 0;
+	border-radius: 50%;
+}
+
+.vilot {
+	background-color: #9C46FF;
+	margin-left: 5px;
+}
+
+.orange {
+	background-color: #FFA346;
+	margin-left: 5px;
+}
+
+.sea_blue {
+	background-color: #4677FF;
+	margin-left: 5px;
+}
+
+.green {
+	background-color: #76FF46;
+	margin-left: 5px;
+}
+
+.pink {
+	background-color: #4677FF;
+	margin-left: 5px;
+}
+
+.block_div,
+.second_page_card {
+	display: flex;
+}
+
+.second_page_card {
+	width: 100%;
+}
+
+
+
+  
+  /* //Start Checkbox */
+  
+  /* .custom{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #000;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	
+  }
+  .custom input{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	opacity: 0;
+	cursor: pointer;
+  }
+  .tick{
+	width: 14px;
+	height: 14px;
+	background-color: #000;
+	display: inline-block;
+	opacity: 0;
+   }
+  input:checked + .tick{
+	opacity: 1;
+  }
+  <div class="custom">
+  <input type="checkbox">
+  <span class="tick"></span>
+</div> */
