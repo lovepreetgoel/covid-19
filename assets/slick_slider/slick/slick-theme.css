@@ -151,13 +151,10 @@
 {
     font-size: 0;
     line-height: 0;
-
     display: block;
-
     width: 4px;
     height: 4px;
     padding: 6px;
-
     cursor: pointer;
     margin: 3px;
     color: transparent;

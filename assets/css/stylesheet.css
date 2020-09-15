@@ -65,7 +65,7 @@ a {
 .nav{
     margin-right: 40px;
 }
-.navbar{
+.navbar ,.nav_bar{
     display: flex;
     align-items: center;
     margin: 0;
@@ -198,10 +198,14 @@ a.btn.btn--primary {
 	align-items: center;
 	padding: 10px;
 }
-
+.covid__mask{
+	width: 50%;
+}
 .mask {
-	height: 159px;
-	width: 219px;
+	height: 181px;
+	width: 227px;
+	position: relative;
+    left: 30px;
 }
 
 .product_info {
@@ -210,18 +214,18 @@ a.btn.btn--primary {
 	padding: 10px;
 	line-height: 1.2;
 }
-
 .card_right_side {
-	background-color: #FCF0E7;
+    background-color: #FCF0E7;
+    width: 33%;
 }
 
 .card_center_side {
-	background-color: #E5F1F5;
-	margin: 0 20px;
+    background-color: #E5F1F5;
+    margin: 0 20px;
 }
 
 .card_left_side {
-	background-color: #2684EF;
+    background-color: #E5F1F5;
 }
 
 .covid_heading {
@@ -327,9 +331,9 @@ a.btn.btn--primary {
 }
 
 .covid_19_products_Featured {
-	margin-top: 40px;
+	margin-top: 40px;	
+	flex-wrap: wrap;
 }
-
 .about_products {
 	font-weight: 400;
 	font-size: 22px;
